@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Chapter_01">
-	<title>Introduction to Statics</title>
-	<introduction>
-		<p>Engineering Statics is the gateway into <em>engineering mechanics</em>, which is the application of Newtonian physics to design and analyze objects, systems, and structures with respect to motion, deformation, and failure. In addition to learning the subject itself, you will also develop skills in the art and practice of problem solving and mathematical modeling, skills that will benefit you throughout your engineering career.</p>
-		<p>The subject is called <q>statics</q> because it is concerned with particles and rigid bodies that are in equilibrium, and these will usually be stationary, <ie/> static. </p>
-		<p>The chapters in this book are:
-			<ul marker="">
-			<li><xref ref="Chapter_01" text="title"/><mdash/> an overview of statics and an introduction to units and problem solving.</li>
-			<li><xref ref="Chapter_02" text="title"/><mdash/> basic principles and mathematical operations on force and position vectors. </li>
-			<li><xref ref="Chapter_03" text="title"/><mdash/> an introduction to equilibrium and problem solving.</li>
-			<li><xref ref="Chapter_04" text="title"/><mdash/> the rotational tendency of forces, and simplification of force systems.</li>
-			<li><xref ref="Chapter_05" text="title"/><mdash/> balance of forces and moments for single rigid bodies.</li>
-			<li><xref ref="Chapter_06" text="title"/><mdash/> balance of forces and moments on interconnected systems of rigid bodies.</li>
-			<li><xref ref="Chapter_07" text="title"/><mdash/> an important geometric property of shapes and rigid bodies.</li>
-			<li><xref ref="Chapter_08" text="title"/><mdash/> forces and moments within beams and other rigid bodies.</li>
-			<li><xref ref="Chapter_09" text="title"/><mdash/> equilibrium of bodies subject to friction. </li>
-			<li><xref ref="Chapter_10" text="title"/><mdash/> an important property of geometric shapes used in many applications.</li>
-			</ul> </p>
+  <title>Johdatus statiikkaan</title>
+<introduction>
+	<p>Statiikka on avain <em>teknilliseen mekaniikkaan</em>, joka on newtonilaisen mekaniikan soveltamista esineiden, järjestelmien ja rakenteiden suunnitteluun ja analysointiin liikkeen, muodonmuutoksen ja vaurioiden näkökulmasta. Statiikassa oppii myös ongelmanratkaisua ja matemaattista mallintamista, eli taitoja, jotka ovat hyödyllisiä koko insinööriurasi ajan. Aihetta kutsutaan <q>statiikaksi</q>, koska se käsittelee tasapainossa olevia pistemäisiä ja jäykkiä kappaleita, jotka yleensä ovat liikkumattomia, <ie/> staattisia. </p>
+	<p>Kirjan luvut ovat:
+		<ul marker="">
+		<li><xref ref="Chapter_01" text="title"/><mdash/> yleiskatsaus statiikkaan ja johdanto yksiköihin ja ongelmanratkaisuun.</li>
+		<li><xref ref="Chapter_02" text="title"/><mdash/> perusperiaatteet ja matemaattiset työkalut voima- ja paikkavektoreille. </li>
+		<li><xref ref="Chapter_03" text="title"/><mdash/> johdanto tasapainoon ja ongelmanratkaisuun.</li>
+		<li><xref ref="Chapter_04" text="title"/><mdash/> voimien aiheuttama pyöriminen ja voimajärjestelmien yksinkertaistaminen.</li>
+		<li><xref ref="Chapter_05" text="title"/><mdash/> voimien ja momenttien tasapaino yksittäisille jäykille kappaleille.</li>
+		<li><xref ref="Chapter_06" text="title"/><mdash/> voimien ja momenttien tasapaino yhteenliitettyjen jäykkien kappaleiden järjestelmissä.</li>
+		<li><xref ref="Chapter_07" text="title"/><mdash/> tärkeä geometrinen ominaisuus jäykille kappaleille.</li>
+		<li><xref ref="Chapter_08" text="title"/><mdash/> voimat ja momentit palkeissa ja muissa jäykissä kappaleissa.</li>
+		<li><xref ref="Chapter_09" text="title"/><mdash/> tasapaino kappaleissa kitkavoiman vaikutuksen alaisena. </li>
+		<li><xref ref="Chapter_10" text="title"/><mdash/> tärkeä ominaisuus kappaleille, joita käytetään monissa sovelluksissa.</li>
+		</ul> </p>
 		<p>Your statics course may not cover all of these topics, or may move through them in a different order.</p>
 		<p>Below are two examples of the types of problems you'll learn to solve in statics. Notice that each can be described with a picture and problem statement, a free-body diagram, and equations of equilibrium.</p>
 		<p><term>Equilibrium of a particle:</term> A <m>\lb{140}</m> person walks across a slackline stretched between two trees. If angles <m>\alpha</m> and <m>\theta</m> are known, find the tension in each end of the slackline.</p>
