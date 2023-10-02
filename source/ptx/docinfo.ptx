@@ -3,8 +3,8 @@
   <brandlogo url="https://engineeringstatics.org" source="images/front_cover-160x200.png"/>
   <!--equilibrium_logo.svg-->
   <initialism>Statics:</initialism>
-  <rename element="insight">Thinking Deeper</rename>
-  <rename element="objectives">Key Questions</rename>
+  <rename element="insight">Syventävää tietoa</rename>
+  <rename element="objectives">Avainkysymykset</rename>
   <html>
     <favicon/>
   </html>

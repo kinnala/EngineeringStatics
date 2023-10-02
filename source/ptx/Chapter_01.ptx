@@ -2,7 +2,7 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Chapter_01">
   <title>Johdatus statiikkaan</title>
 <introduction>
-	<p>Statiikka on avain <em>teknilliseen mekaniikkaan</em>, joka on newtonilaisen mekaniikan soveltamista esineiden, järjestelmien ja rakenteiden suunnitteluun ja analysointiin liikkeen, muodonmuutoksen ja vaurioiden näkökulmasta. Statiikassa oppii lisäksi ongelmanratkaisua ja matemaattista mallintamista, eli taitoja, jotka ovat hyödyllisiä koko insinööriurasi ajan. Aihetta kutsutaan <q>statiikaksi</q>, koska se käsittelee tasapainossa olevia pistemäisiä ja jäykkiä kappaleita, jotka yleensä ovat liikkumattomia, <ie/> staattisia. </p>
+	<p>Statiikka on avain <em>teknilliseen mekaniikkaan</em>, joka on newtonilaisen mekaniikan soveltamista esineiden, järjestelmien ja rakenteiden suunnitteluun ja analysointiin. Statiikassa oppii lisäksi ongelmanratkaisua ja matemaattista mallintamista, eli taitoja, jotka ovat hyödyllisiä koko insinööriurasi ajan. Aihetta kutsutaan <q>statiikaksi</q>, koska se käsittelee tasapainossa olevia pistemäisiä ja jäykkiä kappaleita, jotka yleensä ovat liikkumattomia, <ie/> staattisia. </p>
 	<p>Kirjan luvut ovat:
 		<ul marker="">
 		<li><xref ref="Chapter_01" text="title"/><mdash/> yleiskatsaus statiikkaan ja johdanto yksiköihin ja ongelmanratkaisuun.</li>
@@ -32,7 +32,7 @@
             </remix>
             <description>Standardiyksikköympyrää käytetään kaikkien tämän oppikirjan ongelmien vektoreiden kulmien kuvaamiseen. "Alas" osoittaa voiman suuntaan maata kohti (maan painopistettä kohti tai 270 astetta yksikköympyrällä), ja "ylös" osoittaa voiman vaikuttavan 180 asteen päässä "alas" suunnasta (90 astetta yksikköympyrällä). Vastaavasti "oikealle" osoittaa voiman suuntaan nollaa astetta yksikköympyrällä, ja "vasemmalle" osoittaa voiman suuntaan 180 astetta yksikköympyrällä.</description>
 	  </image>
-	  <p>Henkilön kosketuspiste nuoralla:
+	  <p>Kosketuspisteen tasapainoyhtälöt:
           <md>
             <mrow>\Sigma F_x = 0</mrow>
             <mrow>-T_1 \cos \alpha + T_2 \cos \theta = 0</mrow>
@@ -42,7 +42,7 @@
           </md>
 	  </p>
 	</sidebyside>
-	<p><term>Rakenteen tasapaino:</term> Kaivinkoneen varren yläosan pisteessä <m>C</m> vaikuttavat vuorovaikutusvoimat on annettu. Etsitään pisteen <m>D</m> kohdalla rakenteen sisäinen normaalivoiman, leikkausvoima ja taipumismomentti.</p>
+	<p><term>Rakenteen tasapaino:</term> Kaivinkoneen varren yläosassa, pisteessä <m>C</m>, vaikuttavat voimat on annettu. Etsi pisteessä <m>D</m> rakenteen sisäinen normaalivoima, leikkausvoima ja taipumismomentti.</p>
 	<sidebyside width="31%" margins="0%">
 	  <image source="images/crane01.png">
             <remix>
@@ -57,7 +57,7 @@
               <license href="https://creativecommons.org/choose/zero/">CC-0</license>
             </remix>
 	  </image>
-	  <p>Osan leikkaus FBD:
+	  <p>Leikatun osan tasapainoyhtälöt:
           <md>
             <mrow>\Sigma F_x = 0</mrow>
             <mrow>-C_x + F_x - V_x - N_x = 0</mrow>
@@ -71,9 +71,9 @@
           </md> </p>
 	</sidebyside>
 
-	<p>Statiikan tiedot ja taidot ovat hyödyksi muissa kursseissasi, erityisesti dynamiikassa, kiinteän aineen mekaniikassa (lujuusoppi) ja virtausmekaniikassa.  Näin ollen statiikka on monien insinööritieteiden perusta.</p>
+	<p>Statiikan tiedot ja taidot ovat hyödyksi muissa opinnoissasi, erityisesti dynamiikassa, kiinteän aineen mekaniikassa (lujuusoppi) ja virtausmekaniikassa.  Näin ollen statiikka on insinööritieteiden perusta.</p>
 	<figure xml:id="mindmap">
-	  <caption> Kartta siitä, miten statiikka rakentuu matematiikan ja fysiikan esitietojen päälle, ja vaikuttaa myöhempiin kiinteän aineen mekaniikan ja dynamiikan kursseihin.</caption>
+	  <caption> Statiikka rakentuu matematiikan ja fysiikan esitietojen päälle, ja on esitietona myöhemmille kiinteän aineen mekaniikan ja dynamiikan kursseille.</caption>
 	  <image width="70%" source="images/mindmap.png">
             <remix>
               <creator>Jacob Moore</creator>
@@ -85,21 +85,21 @@
       </introduction>
 
 	<section xml:id="newtons-laws">
-		<title>Newton's Laws of Motion</title>
+		<title>Newtonin lait</title>
 		<objectives>
 			<ul>
-				<li>What are the two types of motion?</li>
-				<li>What three relationships do Newton's laws of motion define?</li>
-				<li>What are physical examples for each of Newton's three laws of motion?</li>
+				<li>Mitkä ovat liikkeen kaksi peruslajia?</li>
+				<li>Mitkä yhteydet Newtonin lait määrittelevät?</li>
+				<li>Mitkä ovat fysikaalisia esimerkkejä kullekin Newtonin laille?</li>
 			</ul>
 		</objectives>
 		<introduction>
-			<p>The English scientist Sir Issac Newton established the foundation of mechanics in 1687 with his three laws of motion, which describe the relation between forces, objects and motion. Motion can be separated into two types:
+			<p>Englantilainen tutkija Isaac Newton loi klassisen mekaniikan perustan 1687 muotoilemalla kolme lakia, jotka kuvaavat voimien, kappaleiden ja liikkeen yhteyttä. Liikkeen voi kuvata yhdistelmänä kahdesta peruslajista:
 				<ul marker="">
-				<li><p><term>Translation</term><mdash/> where a body changes position without changing its orientation in space, and</p></li>
-				<li><p><term>Rotation</term><mdash/> where a body spins about an axis fixed in space, without changing its average position.</p></li>
+				<li><p><term>Translaatio</term><mdash/>, jossa kappaleen paikka muuttuu ilman, että sen orientaatio muuttuu.</p></li>
+				<li><p><term>Rotaatio</term><mdash/>, jossa kappale pyörii paikallaan olevan akselin ympäri muuttamatta paikkaansa.</p></li>
 				</ul> </p>
-			<p>Some moving bodies are purely translating, others are purely rotating, and many are doing both. Conveniently, we can usually separate translation and rotation and analyze them individually with independent equations.</p>
+			<p>Jotkut kappaleet ovat puhtaassa translaatiossa ja jotkut puhtaassa rotaatiossa, ja monien liiketila on yhdistetty translaatio ja rotaatio.  Näin ollen liikkeen voi usein jakaa sekä translaatioon että rotaation ja analysoida niitä erikseen.</p>
 			<p>Newton's three laws and their implications with respect to translation and rotation are described below.</p>
 		</introduction>
 		<subsection xml:id="newtons-first-law">
