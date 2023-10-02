@@ -2,7 +2,7 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Chapter_01">
   <title>Johdatus statiikkaan</title>
 <introduction>
-	<p>Statiikka on avain <em>teknilliseen mekaniikkaan</em>, joka on newtonilaisen mekaniikan soveltamista esineiden, järjestelmien ja rakenteiden suunnitteluun ja analysointiin liikkeen, muodonmuutoksen ja vaurioiden näkökulmasta. Statiikassa oppii myös ongelmanratkaisua ja matemaattista mallintamista, eli taitoja, jotka ovat hyödyllisiä koko insinööriurasi ajan. Aihetta kutsutaan <q>statiikaksi</q>, koska se käsittelee tasapainossa olevia pistemäisiä ja jäykkiä kappaleita, jotka yleensä ovat liikkumattomia, <ie/> staattisia. </p>
+	<p>Statiikka on avain <em>teknilliseen mekaniikkaan</em>, joka on newtonilaisen mekaniikan soveltamista esineiden, järjestelmien ja rakenteiden suunnitteluun ja analysointiin liikkeen, muodonmuutoksen ja vaurioiden näkökulmasta. Statiikassa oppii lisäksi ongelmanratkaisua ja matemaattista mallintamista, eli taitoja, jotka ovat hyödyllisiä koko insinööriurasi ajan. Aihetta kutsutaan <q>statiikaksi</q>, koska se käsittelee tasapainossa olevia pistemäisiä ja jäykkiä kappaleita, jotka yleensä ovat liikkumattomia, <ie/> staattisia. </p>
 	<p>Kirjan luvut ovat:
 		<ul marker="">
 		<li><xref ref="Chapter_01" text="title"/><mdash/> yleiskatsaus statiikkaan ja johdanto yksiköihin ja ongelmanratkaisuun.</li>
@@ -15,74 +15,75 @@
 		<li><xref ref="Chapter_08" text="title"/><mdash/> voimat ja momentit palkeissa ja muissa jäykissä kappaleissa.</li>
 		<li><xref ref="Chapter_09" text="title"/><mdash/> tasapaino kappaleissa kitkavoiman vaikutuksen alaisena. </li>
 		<li><xref ref="Chapter_10" text="title"/><mdash/> tärkeä ominaisuus kappaleille, joita käytetään monissa sovelluksissa.</li>
-		</ul> </p>
-		<p>Your statics course may not cover all of these topics, or may move through them in a different order.</p>
-		<p>Below are two examples of the types of problems you'll learn to solve in statics. Notice that each can be described with a picture and problem statement, a free-body diagram, and equations of equilibrium.</p>
-		<p><term>Equilibrium of a particle:</term> A <m>\lb{140}</m> person walks across a slackline stretched between two trees. If angles <m>\alpha</m> and <m>\theta</m> are known, find the tension in each end of the slackline.</p>
-		<sidebyside widths="31% 25% 31%" margins="0%">
-			<image source="images/slackline.png">
-				<remix>
-					<source href="https://commons.wikimedia.org/wiki/File:Maggie_on_slackline.jpg"/>
-				</remix>
-				<description>A woman walking across a slackline stretched between two trees. Her arms are outstretched for balance.</description>
-			</image>
-			<image source="images/FBD-01-a">
-				<remix>
-					<creator href="mailto:dan.baker@colostate.edu">Dan Baker</creator>
-					<license href="https://creativecommons.org/choose/zero/">CC-0</license>
-				</remix>
-				<description>A standard unit circle is used to describe the angles of vectors in all problems in this text. "Down" is used to indicate that the force acts towards the ground (toward the gravitational center of the earth, or 270 degrees on the unit circle), and "up" is used to indicate that a force acts at 180 degrees from "down" (90 degrees on a unit circle). Similarly, right indicates that the force acts towards zero degrees on the unit circle, and left indicates that a force acts towards 180 degrees on a unit circle.</description>
-			</image>
-			<p>Person's point of contact to slackline:
-				<md>
-				<mrow>\Sigma F_x = 0</mrow>
-				<mrow>-T_1 \cos \alpha + T_2 \cos \theta = 0</mrow>
-				<mrow/>
-				<mrow>\Sigma F_y = 0</mrow>
-				<mrow> T_1 \sin \alpha +T_2 \sin \theta -W = 0</mrow>
-				</md> </p>
-		</sidebyside>
-		<p><term>Equilibrium of a rigid body:</term> Given the interaction forces at point <m>C</m> on the upper arm of the excavator, find the internal axial force, shear force, and bending moment at point <m>D</m>.</p>
-		<sidebyside width="31%" margins="0%">
-			<image source="images/crane01.png">
-				<remix>
-					<source href="https://pixabay.com/photos/backhoe-construction-site-2870985/"/>
-					<license href="https://pixabay.com/service/license/"/>
-				</remix>
-				<description>A backhoe with a boom which is connected to the car body and cab. A boom cylinder is connected to the boom and cab to actuate (move) the boom. At the end of the boom, the stick (arm) is connected, the end of which is the bucket. The arm cylinder connects the boom arm to the stick arm to change the angle between the two.</description>
-			</image>
-			<image source="images/FBD-01-b">
-				<remix>
-					<creator href="mailto:dan.baker@colostate.edu">Dan Baker</creator>
-					<license href="https://creativecommons.org/choose/zero/">CC-0</license>
-				</remix>
-			</image>
-			<p>Section cut FBD:
-				<md>
-				<mrow>\Sigma F_x = 0</mrow>
-				<mrow>-C_x + F_x - V_x - N_x = 0</mrow>
-				<mrow/>
-				<mrow>\Sigma F_y = 0</mrow>
-				<mrow>-C_y - F_y - V_y + N_y = 0</mrow>
-				<mrow/>
-				<mrow>\Sigma M_D = 0</mrow>
-				<mrow>+(d_y)C_x + (d_x)C_y - M_D = 0</mrow>
-				<!--todo  should make sign convention arrows like here https://tex.stackexchange.com/questions/257439/making-an-anti-clockwise-circled-arrow-around-a-sign-in-a-math-environment -->
-				</md> </p>
-		</sidebyside>
-		<p>The knowledge and skills gained in Statics will be used in your other engineering courses, in particular in Dynamics, Mechanics of Solids (also called Strength or Mechanics of Materials), and in Fluid Mechanics. Statics will be a foundation of your engineering career. </p>
-		<figure xml:id="mindmap">
-			<caption> Map of how Statics builds upon the prerequisites of Calculus and Physics and then informs the later courses of Mechanics of Solids and Dynamics. </caption>
-			<image width="70%" source="images/mindmap.png">
-				<remix>
-					<creator>Jacob Moore</creator>
-					<license href="https://creativecommons.org/choose/zero/">CC-0</license>
-				</remix>
-				<description>A schematic showing the relationship between subjects take by engineers. Calculus and Physics are the foundation to be able to learn engineering statics. The "Engineering Mechanics Trilogy" is encircled, and the relationships described between the three subjects - statics, dynamics, and solids. Statics is depicted as "no movement". Dynamics is depicted as "Hold on. Everything is moving." Solids is depicted as "it's what inside that counts". After learning statics, you will move to Solids (mechanics of materials) by learning about shear and moment, frames, and virtual work. Also from the fundamentals of statics you will move to Dynamics, where you will learn more about friction and machines. A common thread between all three subjects is includes equilibrium, moment of inertia, and centroids. Additional content that you'll add to your Statics knowledge in Solids includes: stress and strain, material properties, and torsion. Additional content you'll add to your
-					Statics knowledge in Dynamics is the concept that the sum of the forces is equal to mass multiplied by acceleration and that this is NOT equal to zero, as it is in Statics. You will also learn about motion and accelerations.</description>
-			</image>
-		</figure>
-	</introduction>
+	</ul> </p>
+	<p>Ohessa on kaksi esimerkkiä statiikan ongelmasta. Huomaa, että kumpikin voidaan esittää kuvalla ja tehtävänannolla, vapaakappalekuvalla ja tasapainoyhtälöillä.</p>
+	<p><term>Pistemäisen kappaleen tasapaino:</term> Massaltaan <m>\kg{65}</m> henkilö kävelee nuoralla, joka on pingotettu puiden väliin. Jos kulmat <m>\alpha</m> ja <m>\theta</m> on annettu, laske voima nuoran päissä.</p>
+	<sidebyside widths="31% 25% 31%" margins="0%">
+	  <image source="images/slackline.png">
+            <remix>
+              <source href="https://commons.wikimedia.org/wiki/File:Maggie_on_slackline.jpg"/>
+            </remix>
+            <description>Nainen kävelee nuoralla, joka on pingotettu puiden väliin. Hänen käsivartensa ovat ojennettuina tasapainon säilyttämiseksi.</description>
+	  </image>
+	  <image source="images/FBD-01-a">
+            <remix>
+              <creator href="mailto:dan.baker@colostate.edu">Dan Baker</creator>
+              <license href="https://creativecommons.org/choose/zero/">CC-0</license>
+            </remix>
+            <description>Standardiyksikköympyrää käytetään kaikkien tämän oppikirjan ongelmien vektoreiden kulmien kuvaamiseen. "Alas" osoittaa voiman suuntaan maata kohti (maan painopistettä kohti tai 270 astetta yksikköympyrällä), ja "ylös" osoittaa voiman vaikuttavan 180 asteen päässä "alas" suunnasta (90 astetta yksikköympyrällä). Vastaavasti "oikealle" osoittaa voiman suuntaan nollaa astetta yksikköympyrällä, ja "vasemmalle" osoittaa voiman suuntaan 180 astetta yksikköympyrällä.</description>
+	  </image>
+	  <p>Henkilön kosketuspiste nuoralla:
+          <md>
+            <mrow>\Sigma F_x = 0</mrow>
+            <mrow>-T_1 \cos \alpha + T_2 \cos \theta = 0</mrow>
+            <mrow/>
+            <mrow>\Sigma F_y = 0</mrow>
+            <mrow> T_1 \sin \alpha +T_2 \sin \theta -W = 0</mrow>
+          </md>
+	  </p>
+	</sidebyside>
+	<p><term>Rakenteen tasapaino:</term> Kaivinkoneen varren yläosan pisteessä <m>C</m> vaikuttavat vuorovaikutusvoimat on annettu. Etsitään pisteen <m>D</m> kohdalla rakenteen sisäinen normaalivoiman, leikkausvoima ja taipumismomentti.</p>
+	<sidebyside width="31%" margins="0%">
+	  <image source="images/crane01.png">
+            <remix>
+              <source href="https://pixabay.com/photos/backhoe-construction-site-2870985/"/>
+              <license href="https://pixabay.com/service/license/"/>
+            </remix>
+            <description>Kaivinkoneessa on varsi, joka on kytketty ajoneuvon runkoon ja ohjaamoon. Varsi sylinteri on kytketty varren ja ohjaamon välille varren liikuttamiseksi. Varren päässä on kaivin. Varsi sylinteri yhdistää varren ja kaivimen muuttamaan kulmaa niiden välillä.</description>
+	  </image>
+	  <image source="images/FBD-01-b">
+            <remix>
+              <creator href="mailto:dan.baker@colostate.edu">Dan Baker</creator>
+              <license href="https://creativecommons.org/choose/zero/">CC-0</license>
+            </remix>
+	  </image>
+	  <p>Osan leikkaus FBD:
+          <md>
+            <mrow>\Sigma F_x = 0</mrow>
+            <mrow>-C_x + F_x - V_x - N_x = 0</mrow>
+            <mrow/>
+            <mrow>\Sigma F_y = 0</mrow>
+            <mrow>-C_y - F_y - V_y + N_y = 0</mrow>
+            <mrow/>
+            <mrow>\Sigma M_D = 0</mrow>
+            <mrow>+(d_y)C_x + (d_x)C_y - M_D = 0</mrow>
+            <!--todo  pitäisi tehdä merkkikonventio nuolia kuten täällä https://tex.stackexchange.com/questions/257439/making-an-anti-clockwise-circled-arrow-around-a-sign-in-a-math-environment -->
+          </md> </p>
+	</sidebyside>
+
+	<p>Statiikan tiedot ja taidot ovat hyödyksi muissa kursseissasi, erityisesti dynamiikassa, kiinteän aineen mekaniikassa (lujuusoppi) ja virtausmekaniikassa.  Näin ollen statiikka on monien insinööritieteiden perusta.</p>
+	<figure xml:id="mindmap">
+	  <caption> Kartta siitä, miten statiikka rakentuu matematiikan ja fysiikan esitietojen päälle, ja vaikuttaa myöhempiin kiinteän aineen mekaniikan ja dynamiikan kursseihin.</caption>
+	  <image width="70%" source="images/mindmap.png">
+            <remix>
+              <creator>Jacob Moore</creator>
+              <license href="https://creativecommons.org/choose/zero/">CC-0</license>
+            </remix>
+            <description>Skeema, joka kuvaa insinöörien opiskelun välistä suhdetta. Laskenta ja fysiikka muodostavat perustan insinööristatiikan oppimiselle. "Insinöörimekaniikan trilogia" on piirretty ympyrän ympärille, ja siinä kuvataan suhteita kolmen aineen - staattisuus, dynamiikka ja vankat aineet - välillä. Staattisuus kuvataan "ei liikettä". Dynamiikka kuvataan "Pidä kiinni. Kaikki liikkuu." Vankat aineet kuvataan "siinä on se, mikä lasketaan." Staattisuuden perusteiden oppimisen jälkeen siirryt Vankoihin aineisiin (materiaalien mekaniikka) oppimalla leikkausvoimista ja taipumishetkistä, rungoista ja virtuaalisesta työstä. Myös staattisuuden perusteiden oppimisen jälkeen siirryt Dynamiikkaan, jossa opit lisää kitkasta ja koneista. Kaikissa kolmessa aiheessa on yhteisiä piirteitä, kuten tasapaino, iner-tiamomentti ja painopiste. Lisäsisältö, jonka lisäät staattisuustietoihisi Vankkojen aineiden mekaniikassa, sisältää jännityksen ja deformaa-tion, materiaalin ominaisuudet ja kiertymisen. Lisäsisältö, jonka lisäät staattisuustietoihisi Dynamiikassa, on käsite, että voimien summa on massa kerrottuna kiihtyvyydellä, eikä se ole nolla, kuten staattisuudessa. Opit myös liikettä ja kiihtyvyyksiä.</description>
+	  </image>
+	</figure>
+      </introduction>
+
 	<section xml:id="newtons-laws">
 		<title>Newton's Laws of Motion</title>
 		<objectives>
